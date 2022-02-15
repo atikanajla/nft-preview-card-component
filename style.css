@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit:wght@300;400;600&display=swap");
+
+:root{
+	### Primary
+
+	--Softblue: hsl(215, 51%, 70%);
+	--Cyan: hsl(178, 100%, 50%);
+
+	### Neutral
+
+	--darkblueBody: hsl(217, 54%, 11%);
+	--darkblueCont: hsl(216, 50%, 16%);
+	--darkblueLine: hsl(215, 32%, 27%);
+	--White: hsl(0, 0%, 100%);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	background-color: hsl(217, 54%, 11%);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	color: var(--White);
+	font-family: Outfit, sans-serif;
+}
+a{
+	text-decoration: none;
+	color: var(--Cyan);
+}
+.container{
+	position: relative;
+	width: 325px;
+	background-color: var(--darkblueCont);
+	border-radius: 20px;
+	margin: 0 auto;
+	padding: 20px;
+	 
+}
+.content{
+	position: relative;
+}
+.content .main-image,.img-overlay{
+	border-radius: 15px;
+}
+.content .main-image{
+	width: 100%;
+	
+}
+.content .img-overlay{
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity: 0;
+}
+.content .img-overlay img{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+}
+
+.content .img-overlay:hover{
+	background-color: var(--Cyan);
+	opacity: 0.5;
+}
+/* */
+.text h4{
+	font-size: 20px;
+	margin: 20px 0;
+}
+.text p{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+/* */
+.ethereum{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+.ethereum div img{
+	margin: 0 5px;
+	height: 1em;
+}
+/* */
+.user{
+	width: 100%;
+	display: flex;
+	align-content: center;
+	border-top: 1px solid var(--darkblueLine);
+	padding-top: 15px;
+}
+.user img{
+	width: 35px;
+	border: 2px solid white;
+	border-radius: 20px;
+}
+.user p{
+	margin: 0 5px;
+}
